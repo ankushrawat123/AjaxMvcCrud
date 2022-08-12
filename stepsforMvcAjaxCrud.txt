@@ -1,0 +1,55 @@
+MVC CRUD OPERATIONS (webApp(ModelviewController) using entity framework and db first approach
+
+priyanshu dbfirstapproach mvc ajax
+https://www.youtube.com/watch?v=6gpRM8yS9IE
+
+chetna code first approach mvc ajax
+https://youtu.be/3r6RfShv8m8
+
+step-1
+
+step2
+packages for entity framework
+
+	"Microsoft.Bcl.AsyncInterfaces" Version="6.0.0" />
+	"Microsoft.EntityFrameworkCore" Version="3.1.25" />
+	"Microsoft.EntityFrameworkCore.Design" Version="3.1.25">
+	"Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.25" />
+	"Microsoft.EntityFrameworkCore.Tools" Version="3.1.25">
+	"Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" 
+
+step3
+Go to packageManagerConsole
+Scaffold-DbContext "Server=DESKTOP-9SHRA3P\SQLEXPRESS;Database=Learn_DB;Trusted_Connection=True;"Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -DataAnnotations
+Scaffold-DbContext "Server=LAPTOP-4K7AS2ME\SQLEXPRESS;Database=Learn_DB;Trusted_Connection=True;"Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -DataAnnotations
+
+Scaffold-DbContext "Data Source=(localdb)\\ProjectModels;Initial Catalog=Learn_DB;Integrated Security=True;"Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -DataAnnotations
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Mvc with ajax entity framework using pop up dialog with code first approach >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+step-1
+packages for entity framework code first approach for Mvc
+
+	"Microsoft.Bcl.AsyncInterfaces" Version="6.0.0" />
+	"Microsoft.EntityFrameworkCore" Version="3.1.25" />
+	"Microsoft.EntityFrameworkCore.Design" Version="3.1.25">
+	"Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.25" />
+	"Microsoft.EntityFrameworkCore.Tools" Version="3.1.25">
+	"Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" 
+
+step-2
+create TransactionDbContext(dbcontext) file
+inject dbcontext file in configureServices method for dependancy injection(to create instance every time when api hit)
+
+step-3
+Migration command in package console manager for code first approach
+
+add-migration ajax
+update-database
+
+step-4
+create mvc controller
+
